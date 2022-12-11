@@ -1,18 +1,24 @@
+
+
 h1{
-  font-family: 'roboto_monoitalic';
-  size: 60px;
+  font-family: 'Roboto Slab',monospace;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2{
+  
+  font-family: 'Roboto Slab',monospace;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 50px;
   text-align: center;
 }
 
 body{
-  background-color: #BFBFBF;
+  background-color: #ececec;
 }
 
-@font-face {
-    font-family: 'roboto_monoitalic';
-    src: url('robotomono-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('robotomono-italic-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
