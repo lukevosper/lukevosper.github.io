@@ -1,11 +1,11 @@
 h1{
   font-family: roboto_monoitalic;
-  size: 40px;
+  size: 60px;
   text-align: center;
 }
 
 body{
-  background-color: #D7FDF0;
+  background-color: #BFBFBF;
 }
 
 @font-face {
