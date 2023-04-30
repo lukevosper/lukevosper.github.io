@@ -21,13 +21,6 @@ var w = window.innerWidth;
 var h = window.innerHeight;  
 
 
-window.onresize = function() {
-  // assigns new values for width and height variables
-  w = window.innerWidth;
-  h = window.innerHeight;  
-  canvas.size(w,h);
-}
-
 function setup() {
   createCanvas(w, h);
 
@@ -101,4 +94,11 @@ function draw() {
     vertex(v.x, v.y);
   });
   endShape(CLOSE);
+}
+
+window.onresize = function() {
+  // assigns new values for width and height variables
+  w = window.innerWidth;
+  h = window.innerHeight;  
+  resizeCanvas(w,h);
 }
