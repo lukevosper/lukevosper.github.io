@@ -17,8 +17,19 @@ let morph = [];
 // This boolean variable will control if we are morphing to a circle or square
 let state = false;
 
+var w = window.innerWidth;
+var h = window.innerHeight;  
+
+
+window.onresize = function() {
+  // assigns new values for width and height variables
+  w = window.innerWidth;
+  h = window.innerHeight;  
+  canvas.size(w,h);
+}
+
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(w, h);
 
   // Create a circle using vectors pointing from center
   for (let angle = 0; angle < 360; angle += 9) {
